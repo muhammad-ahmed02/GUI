@@ -1,3 +1,9 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .register-page {
-  background-color: blue;
+  display: flex;
+  flex-direction: row;
 }
