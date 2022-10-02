@@ -1,8 +1,84 @@
-# Getting Started with Create React App
+<h1 align="center">GUI</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2 align="center"> This Reusable GUI is based on an idea to create templates in react for people to use them later in there projects. </h2>
 
-## Available Scripts
+The Reuable GUI is the concept to reduse the development time in react projects. Here we would create some common pages which are mostly used in every other Website.
+
+Visit the website: [GUI](https://open-gui.netlify.app)
+
+#
+<h3> 📌 Contribution Guidelines 🏗 </h3>
+
+Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and make it better. 
+To start contributing, follow the below guidelines: 
+
+**1.**  Fork [this](https://github.com/muhammad-ahmed02/GUI) repository.
+
+**2.**  Clone your forked copy of the project.
+
+```bash
+   git clone https://github.com/muhammad-ahmed02/GUI.git
+```
+
+**3.** Navigate to the project directory.
+```
+   cd GUI
+```
+
+**4.** Create a new branch:
+```
+   git checkout -b YourBranchName
+```
+
+**5.** Make changes in source code.
+
+**6.** Stage your changes and commit
+
+```
+   git add .
+   git commit -m "<your_commit_message>"
+```
+
+**7.** Push your local commits to the remote repo.
+
+```
+   git push origin YourBranchName
+```
+
+**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
+
+**9.** If anyone contribute to this repository, then the changes will not reflect in your local repository. For that:
+
+**10.** Setup a reference(remote) to the original repository to get all the changes from the remote.
+```
+   git remote add upstream  https://github.com/muhammad-ahmed02/GUI
+```
+
+**11.** Check the remotes for this repository.
+```
+   git remote -v
+```
+
+**12.** Fetching from the remote repository will bring in its branches and their respective commits.
+```
+   git fetch upstream
+```
+
+**13.** Make sure that you're on your master branch.
+```
+   git checkout main
+```
+
+**14.** Now that we have fetched the upstream repository, we want to merge its changes into our local branch. This will bring that branch into sync with the upstream, without losing our local changes.
+```
+   git merge upstream/main
+```
+
+## Code of Conduct 📜
+	
+To maintain a safe and inclusive space for everyone to learn and grow, contributors are advised to follow the [Code of Conduct](./CODE_OF_CONDUCT.md).
+
+## Get started with the project
 
 In the project directory, you can run:
 
@@ -14,11 +90,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -28,16 +99,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
