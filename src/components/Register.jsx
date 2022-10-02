@@ -3,63 +3,104 @@ import Button from "@mui/material/Button";
 
 import "./Register.scss";
 import useWindowDimensions from "./Dimension";
-import Background from "../assets/background.jpg";
+// import Background from "../assets/background.jpg";
 import { useState } from "react";
+import { Card, Grid, Stack, Typography } from "@mui/material";
 
 const Register = () => {
-  const { height, width } = useWindowDimensions();
-  const [password, setPassword] = useState("");
-  const [cPassword, setCPassword] = useState("");
+  const { height } = useWindowDimensions();
+  const [firstName, setFirstName] = useState(null);
+  const [lastName, setLastName] = useState(null);
+  const [email, setEmail] = useState(null);
+  const [password, setPassword] = useState(null);
+  const [cPassword, setCPassword] = useState(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("SIGNUP FORM SUBMITTED!");
+  };
 
   return (
-    <div className="register-page">
-      <div className="background">
-        <img src={Background} alt="Background" width="100%" height={height} />
-      </div>
-      <div className="register-form">
-        <form>
-          <h2>Sign Up Form</h2>
-          <div className="form-group">
-            <TextField required id="outlined-required" label="First Name" />
-          </div>
-          <div className="form-group">
-            <TextField required id="outlined-required" label="Last Name" />
-          </div>
-          <div className="form-group">
-            <TextField required id="outlined-required" label="Email" />
-          </div>
-          <div className="form-group">
-            <TextField
-              required
-              id="outlined-password-input"
-              label="Password"
-              type="password"
-              autoComplete="current-password"
-              value={password}
-              onChange={(e) => {
-                setPassword(e.target.value);
-              }}
-            />
-          </div>
-          <div className="form-group">
-            <TextField
-              required
-              id="outlined-password-input"
-              label="Confirm Password"
-              type="password"
-              autoComplete="current-password"
-              value={cPassword}
-              onChange={(e) => {
-                setCPassword(e.target.value);
-              }}
-            />
-          </div>
-          <div className="form-group">
-            <Button className="btn" variant="outlined">Sign Up</Button>
-          </div>
-        </form>
-      </div>
-    </div>
+    <form
+      className="register-page"
+      onSubmit={handleSubmit}
+      style={{ height: height, width: "100%" }}
+    >
+      <Card className="entity-form-card">
+        <Stack spacing={3}>
+          <Grid container spacing={3}>
+            <Grid item xs={12}>
+              <Typography variant="h4" gutterBottom>Signup Form</Typography>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <TextField
+                fullWidth
+                label="First Name"
+                variant="filled"
+                required
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+              />
+            </Grid>
+
+            <Grid item xs={12} md={6}>
+              <TextField
+                label="Last Name"
+                fullWidth
+                variant="filled"
+                required
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                label="Email"
+                fullWidth
+                variant="filled"
+                type="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                label="Password"
+                variant="filled"
+                type="password"
+                fullWidth
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                label="Confirm Password"
+                variant="filled"
+                type="password"
+                fullWidth
+                required
+                value={cPassword}
+                onChange={(e) => setCPassword(e.target.value)}
+              />
+            </Grid>
+
+            <Grid item xs={12}>
+              <Button
+                type="submit"
+                variant="contained"
+                color="primary"
+                fullWidth
+              >
+                Signup
+              </Button>
+            </Grid>
+          </Grid>
+        </Stack>
+      </Card>
+    </form>
   );
 };
 

@@ -6,38 +6,12 @@
 }
 
 .register-page {
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(209, 207, 207);
-  // color: rgb(202, 202, 202);
+  background-image: url(../assets/background.jpg);
+  overflow: hidden;
 }
 
-.background {
-  width: 60%;
-}
-
-.register-form {
-  width: 40%;
+.entity-form-card {
+  padding: 1rem;
+  max-width: 800px;
   margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  form {
-    background: linear-gradient(
-      to bottom right,
-      rgb(173, 169, 169),
-      rgb(116, 101, 101)
-    );
-    border-radius: 20px;
-    padding: 30px;
-  }
-}
-
-.form-group {
-  margin: 10px 0px;
-}
-
-.btn {
-  width: 100%;
 }
