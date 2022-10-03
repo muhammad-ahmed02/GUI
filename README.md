@@ -1,23 +1,23 @@
 <h1 align="center">GUI</h1>
 
-<h2 align="center"> This Reusable GUI is based on an idea to create templates in react for people to use them later in there projects. </h2>
+<h2 align="center"> This Reusable GUI is based on an idea to create templates in react for people to use them later in their projects. </h2>
 
-The Reuable GUI is the concept to reduse the development time in react projects. Here we would create some common pages which are mostly used in every other Website.
+The Reuable GUI is the concept to reduce the development time in react projects. Here we would create some pages that are used very commonly.
 
-Visit the website: [GUI](https://open-gui.netlify.app)
+Visit our website: [GUI](https://open-gui.netlify.app)
 
 #
 <h3> 📌 Contribution Guidelines 🏗 </h3>
 
-Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and make it better. 
-To start contributing, follow the below guidelines: 
+Are we missing any of your favorite features, which you think you can implement❓ If yes, We invite you to contribute to this project and make it better. 
+To start contributing, follow the steps given below: 
 
-**1.**  Fork [this](https://github.com/muhammad-ahmed02/GUI) repository.
+**1.**  Fork [this](https://github.com/muhammad-ahmed02/GUI/fork) repository.
 
 **2.**  Clone your forked copy of the project.
 
 ```bash
-   git clone https://github.com/muhammad-ahmed02/GUI.git
+   git clone https://github.com/YourGithubUsername/GUI.git
 ```
 
 **3.** Navigate to the project directory.
@@ -47,7 +47,7 @@ To start contributing, follow the below guidelines:
 
 **8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
 
-**9.** If anyone contribute to this repository, then the changes will not reflect in your local repository. For that:
+**9.** If anyone will contribute to this repository, then those changes will not be reflected in your local repository. For fixing that:
 
 **10.** Setup a reference(remote) to the original repository to get all the changes from the remote.
 ```
