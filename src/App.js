@@ -1,9 +1,10 @@
 import { Route, Switch, BrowserRouter } from "react-router-dom";
+
 import Register from "./components/Register";
 import Login from "./components/Login";
+import Home from "./pages/Home/Home"
 
-const Home = () => <h1>Home page</h1>
-const Error404 = () => <h1>Error 404. Not found</h1>
+const Error404 = () => <h1>Error 404 - Content not found</h1>
 
 function App() {
   return (
