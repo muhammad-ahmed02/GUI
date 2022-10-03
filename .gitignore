@@ -24,6 +24,7 @@ yarn-debug.log*
 yarn-error.log*
 /.changelog
 yarn.lock
+package-lock.json
 
 # Distribution directories
 dist/
