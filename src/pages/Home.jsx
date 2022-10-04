@@ -1,6 +1,7 @@
-import { Box, Button, Container } from "@mui/material";
+import React from 'react'
+import { Box, Button, Container } from '@mui/material'
 
-import Footer from "../components/Footer";
+import Footer from '../components/Footer'
 import ComponentList from '../components/ComponentsList'
 
 const Home = () => {
@@ -8,7 +9,7 @@ const Home = () => {
     <>
       <Container sx={{ maxWidth: 1080 }}>
         <Box component="header" pt={15}>
-          <Box sx={{ textAlign: "center" }}>
+          <Box sx={{ textAlign: 'center' }}>
             <Box component="h1" sx={{ fontSize: 60, mb: 5 }}>
               Muhammad GUI
             </Box>
@@ -39,14 +40,14 @@ const Home = () => {
           </Box>
         </Box>
 
-        <Box component="section" sx={{ my: 15, textAlign: "center" }}>
+        <Box component="section" sx={{ my: 15, textAlign: 'center' }}>
           <h2>Components</h2>
           <ComponentList />
         </Box>
       </Container>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

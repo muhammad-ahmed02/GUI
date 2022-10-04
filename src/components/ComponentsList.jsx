@@ -1,5 +1,6 @@
-import { Button, Grid } from "@mui/material"
-import { Link } from "react-router-dom"
+import React from 'react'
+import { Button, Grid } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 const componentList = () => {
   return (
@@ -10,7 +11,7 @@ const componentList = () => {
             columns={4}
             sx={{
               maxWidth: 780,
-              margin: "0 auto",
+              margin: '0 auto'
             }}
             direction="row"
             justifyContent="center"

@@ -1,11 +1,12 @@
-import { Route, Switch, BrowserRouter } from "react-router-dom";
+import React from 'react'
+import { Route, Switch, BrowserRouter } from 'react-router-dom'
 
-import Register from "./components/Register";
-import Login from "./components/Login";
-import Error404 from "./components/Error404";
+import Register from './components/Register'
+import Login from './components/Login'
+import Error404 from './components/Error404'
 import Home from './pages/Home'
 
-function App() {
+function App () {
   return (
     <>
       <BrowserRouter>
@@ -17,7 +18,7 @@ function App() {
         </Switch>
       </BrowserRouter>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
