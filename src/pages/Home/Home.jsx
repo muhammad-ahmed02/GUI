@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 
 import './styles.css'
 import Footer from "../../components/Footer/Footer"
+import { Button } from "@mui/material"
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
             <p>The Reuable GUI is the concept to reduse the development time in react projects. Here we would create some common pages which are mostly used in every other Website.</p>
           </div>
           <div className="home__ctas">
-            <a className="home__cta" href="https://github.com/muhammad-ahmed02/GUI">GitHub</a>
+            <Button component='a' className="home__cta" href="https://github.com/muhammad-ahmed02/GUI">GitHub</Button>
             <a className="home__cta" href="https://github.com/muhammad-ahmed02/GUI">Contribute</a>
           </div>
         </header>
