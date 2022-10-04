@@ -4,7 +4,8 @@ module.exports = {
     es2021: true
   },
   extends: [
-    'plugin:react/recommended',
+    'react-app',
+    'reac-app/jest',
     'standard'
   ],
   parserOptions: {
@@ -14,9 +15,6 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: [
-    'react'
-  ],
   rules: {
   }
 }
