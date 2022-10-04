@@ -3,7 +3,7 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import Error404 from "./components/Error404";
-import Home from './pages/Home/Home'
+import Home from './pages/Home'
 
 function App() {
   return (
