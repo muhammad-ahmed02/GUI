@@ -1,27 +1,27 @@
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
+import React, { useState } from 'react'
+import TextField from '@mui/material/TextField'
+import Button from '@mui/material/Button'
 
-import "./Register.scss";
-import useWindowDimensions from "./Dimension";
+import './Register.scss'
+import useWindowDimensions from './Dimension'
 // import Background from "../assets/background.jpg";
-import { useState } from "react";
-import { Card, Grid, Stack, Typography } from "@mui/material";
+import { Card, Grid, Stack, Typography } from '@mui/material'
 
 const Login = () => {
-  const { height } = useWindowDimensions();
-  const [email, setEmail] = useState(null);
-  const [password, setPassword] = useState(null);
+  const { height } = useWindowDimensions()
+  const [email, setEmail] = useState(null)
+  const [password, setPassword] = useState(null)
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("LOGIN FORM SUBMITTED!");
-  };
+    e.preventDefault()
+    console.log('LOGIN FORM SUBMITTED!')
+  }
 
   return (
     <form
       className="register-page"
       onSubmit={handleSubmit}
-      style={{ height: height, width: "100%" }}
+      style={{ height, width: '100%' }}
     >
       <Card className="entity-form-card">
         <Stack spacing={3}>
@@ -66,7 +66,7 @@ const Login = () => {
         </Stack>
       </Card>
     </form>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login

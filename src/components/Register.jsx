@@ -1,30 +1,30 @@
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
+import React, { useState } from 'react'
+import TextField from '@mui/material/TextField'
+import Button from '@mui/material/Button'
 
-import "./Register.scss";
-import useWindowDimensions from "./Dimension";
+import './Register.scss'
+import useWindowDimensions from './Dimension'
 // import Background from "../assets/background.jpg";
-import { useState } from "react";
-import { Card, Grid, Stack, Typography } from "@mui/material";
+import { Card, Grid, Stack, Typography } from '@mui/material'
 
 const Register = () => {
-  const { height } = useWindowDimensions();
-  const [firstName, setFirstName] = useState(null);
-  const [lastName, setLastName] = useState(null);
-  const [email, setEmail] = useState(null);
-  const [password, setPassword] = useState(null);
-  const [cPassword, setCPassword] = useState(null);
+  const { height } = useWindowDimensions()
+  const [firstName, setFirstName] = useState(null)
+  const [lastName, setLastName] = useState(null)
+  const [email, setEmail] = useState(null)
+  const [password, setPassword] = useState(null)
+  const [cPassword, setCPassword] = useState(null)
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("SIGNUP FORM SUBMITTED!");
-  };
+    e.preventDefault()
+    console.log('SIGNUP FORM SUBMITTED!')
+  }
 
   return (
     <form
       className="register-page"
       onSubmit={handleSubmit}
-      style={{ height: height, width: "100%" }}
+      style={{ height, width: '100%' }}
     >
       <Card className="entity-form-card">
         <Stack spacing={3}>
@@ -101,7 +101,7 @@ const Register = () => {
         </Stack>
       </Card>
     </form>
-  );
-};
+  )
+}
 
-export default Register;
+export default Register
