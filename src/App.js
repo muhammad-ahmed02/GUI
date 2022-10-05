@@ -12,9 +12,9 @@ function App () {
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path="/register" component={Register} />
-          <Route exact path="/login" component={Login} />
-          <Route path="*" component={Error404}/>
+          <Route exact path='/register' component={Register} />
+          <Route exact path='/login' component={Login} />
+          <Route path='*' component={Error404} />
         </Switch>
       </BrowserRouter>
     </>
