@@ -1,0 +1,31 @@
+.header{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.headerDesc{
+    margin: -150px 0 50px 0;
+    padding: 0 80px;
+}
+.header_img{
+    width: 100%;
+    height: 450px;
+}
+
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blog_desc{
+    width: 400px;
+    margin: 50px 0 0 0;
+    overflow: hidden;
+    padding: 0 20px 0 20px;
+}
+
+.blog_2{
+    width: 100%;
+    margin: 0 0 10px 0
+}
