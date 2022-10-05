@@ -7,11 +7,30 @@
 
 .register-page {
   background-image: url(../assets/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
 .entity-form-card {
   padding: 1rem;
-  max-width: 800px;
+  max-width: 550px;
   margin: auto;
+  opacity: .9;
+  // background-color: rgba(209, 0, 0,1 );
+  // backdrop-filter: blur(40px);
+}
+.brand_icon:hover{
+  transform: scale(1.05);
+  color:#000;
+  cursor: pointer;
+}
+.login_btn:hover{
+  // background-color: #ffffff;
+  color:rgb(171, 208, 250);
+}
+.signup_btn:hover{
+  color:rgb(171, 208, 250);
+
 }

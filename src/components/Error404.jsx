@@ -14,11 +14,11 @@ const divStyle = {
 
 const Error404 = () => {
   return (
-        <div style={divStyle}>
-        <h1 style={{ fontSize: '30vh' }}>404</h1>
-        <h6>Sorry, the page not found</h6>
-        <SVG404 style={{ height: '10vh', marginTop: '5vh' }}/>
-        </div>
+    <div style={divStyle}>
+      <h1 style={{ fontSize: '30vh' }}>404</h1>
+      <h6>Sorry, the page not found</h6>
+      <SVG404 style={{ height: '10vh', marginTop: '5vh' }} />
+    </div>
   )
 }
 
