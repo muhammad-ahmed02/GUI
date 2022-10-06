@@ -1,6 +1,7 @@
 import "./blog.css";
 import blog_1 from "../../assets/blog/1100x750.jpg";
 import blog_2 from "../../assets/blog/800x460.jpg";
+import Footer from "./footer";
 
 const Blog = () => {
     return(
@@ -16,9 +17,7 @@ const Blog = () => {
                     </p>
                 </div>
             </div>
-            {/* end of blog header */}
-
-            {/* begginning of blog body */}
+           
             <div className="blog">
                 <div className="blog_desc">
                         <img src={blog_2} alt="blog_frame" className="blog_2" />
@@ -103,6 +102,12 @@ const Blog = () => {
                 </div>
             </div>
             {/* end of blog body */}
+
+            {/* begginning of blog footer */}
+            <div>
+                <Footer />
+            </div>
+            {/* end of blog footer */}
         </div>
        
     )
