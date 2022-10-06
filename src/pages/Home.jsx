@@ -1,16 +1,16 @@
-import React from 'react'
-import { Box, Button, Container } from '@mui/material'
+import React from 'react';
+import { Box, Button, Container } from '@mui/material';
 
-import Footer from '../components/Footer'
-import ComponentList from '../components/ComponentsList'
+import Footer from '../components/Footer';
+import ComponentList from '../components/ComponentsList';
 
-const Home = () => {
+function Home() {
   return (
     <>
       <Container sx={{ maxWidth: 1080 }}>
-        <Box component='header' pt={15}>
+        <Box component="header" pt={15}>
           <Box sx={{ textAlign: 'center' }}>
-            <Box component='h1' sx={{ fontSize: 60, mb: 5 }}>
+            <Box component="h1" sx={{ fontSize: 60, mb: 5 }}>
               Muhammad GUI
             </Box>
             <p>
@@ -24,15 +24,15 @@ const Home = () => {
             </p>
             <Box sx={{ mt: 3 }}>
               <Button
-                variant='contained'
-                href='https://github.com/muhammad-ahmed02/GUI'
+                variant="contained"
+                href="https://github.com/muhammad-ahmed02/GUI"
               >
                 GitHub
               </Button>
               <Button
                 sx={{ ml: 3 }}
-                variant='outlined'
-                href='https://github.com/muhammad-ahmed02/GUI'
+                variant="outlined"
+                href="https://github.com/muhammad-ahmed02/GUI"
               >
                 Contribute
               </Button>
@@ -40,14 +40,14 @@ const Home = () => {
           </Box>
         </Box>
 
-        <Box component='section' sx={{ my: 15, textAlign: 'center' }}>
+        <Box component="section" sx={{ my: 15, textAlign: 'center' }}>
           <h2>Components</h2>
           <ComponentList />
         </Box>
       </Container>
       <Footer />
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
