@@ -33,6 +33,11 @@ const componentList = () => {
         </Button>
       </Grid>
       <Grid item>
+        <Button variant='outlined' component={Link} to='/navbar'>
+          Navbar
+        </Button>
+      </Grid>
+      <Grid item>
         <Button
           variant='outlined'
           component={Link}

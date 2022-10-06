@@ -5,7 +5,7 @@ import Register from "./components/Register";
 import Login from "./components/Login";
 import Error404 from "./components/Error404";
 import Home from "./pages/Home";
-
+import Navbar from "./components/Navbar";
 import Blog from "./pages/blog/blog";
 function App() {
   return (
@@ -16,6 +16,8 @@ function App() {
           <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/blog" component={Blog} />
+          <Route exact path="/navbar" component={Navbar} />
+          
           <Route path="*" component={Error404} />
         </Switch>
       </BrowserRouter>
